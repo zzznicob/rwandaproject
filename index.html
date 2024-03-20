@@ -106,3 +106,400 @@ En la actualidad, Ruanda ha experimentado un notable progreso en diversos aspect
   </div>
   </div>
 </footer>
+
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&display=swap');
+
+:root {
+  --bg-primary: #000;
+  --color-primary:  #FFF;
+  --main-font: 'Hanken Grotesk', sans-serif;
+  
+  --font-size-title:55px;
+  --font-size-body: 24px;
+  --font-size-paragraph:12px;
+}
+
+html {
+  scroll-behavior:smooth
+}
+
+.introwrap {
+  display: flex;
+  margin-top: 65px;
+}
+
+
+
+.pic {
+  margin-top: 23px;
+  margin-left: 75px;
+  height: 250px;
+}
+
+#pic2 {
+  margin-left: 35px;
+  margin-top: 15px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 100%;
+  height: 1442.25px;
+  background: black;
+  margin-top: -15px;
+}
+
+h7 {
+  margin-top: 34px;
+}
+
+.section1 {
+  color: white;
+  padding: 35px;
+}
+
+.section2 {
+  color: white;
+  padding: 35px;
+}
+
+.section3 {
+  color: white;
+  padding: 35px;
+}
+
+.p2wrap {
+  width: 50%;
+}
+
+.fullwrap {
+  display: flex;
+}
+
+
+#s2pic {
+  margin-left: 200px;
+}
+
+.p3wrap {
+  width: 70%;
+}
+
+li {
+  display: inline;
+  margin-right: 15px;
+  
+  mix-blend-mode: difference;
+  background-clip:text;
+}
+
+html {
+  background: white;
+  height: 100%;
+  display: flex;
+  
+  
+}
+
+.nav {
+  font-family: var(--main-font);
+  width: 95%;
+  margin: 15px;
+  display: flex;
+  margin-top: 15px;
+  height: 1.5em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+
+  
+}
+
+
+.nav{
+  background: transparent;
+}
+
+
+
+
+h3 {
+  font-weight: 300;
+}
+
+.intro {
+  margin-left: 15px;
+  width: 500px;
+  
+}
+
+p {
+  line-height: 27px;
+}
+
+
+
+h2 {
+  margin: 0;
+}
+
+.t {
+  position:sticky;
+  
+}
+
+.t-2{
+  color: black;
+}
+
+
+
+body {
+  
+  overflow-x: hidden;
+  height:100%;
+  margin: 0;
+  width: 100%;
+  padding:0;
+  background: white;
+}
+
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
+}
+
+a {
+  color: black;
+  scroll-behavior: smooth
+}
+#linkanimation {
+  text-decoration: none;
+  text-decoration-color: none;
+  color: black;
+  position: relative;
+  
+}
+#linkanimation::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255,255,255,0.75); 
+  transform: scale(1,1);
+  transition: background-color .25s ease-in-out;
+  bottom: 0px;
+}
+#linkanimation:hover::before {
+  animation: link ease 0.75s 1 100ms;
+  transform-origin: right;  
+}
+@keyframes link {
+  50%{
+    transform: scaleX(0);
+  }
+  50.1% {
+    transform: translateX(-100%) scalex( -0.01);   
+  }
+  100% {
+    transform: translateX(-100%) scalex(-1);
+  }
+}
+.title {
+  width:100%;
+  display: flex;
+  
+  align-items: center;
+
+}
+
+.t-wrap {
+  width: 45%;
+  font-size:  var(--font-size-title);
+
+
+  
+}
+
+
+h1 {
+  font-family: var(--main-font);
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+footer {
+  background: black;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.cred {
+ color: white;
+  top: 193px;
+  position: absolute;
+}
+
+
+
+.cl1 {
+  background: rgba(0, 161, 222,0.8);
+  height: 125px;
+  width: 100%;
+  z-index: 0;
+}
+.cl2 {
+  background:  rgba(250, 210, 1,0.8);
+  height: 65px;
+  width: 860px;
+  z-index: 0;
+  width: 100%;
+}
+.cl3 {
+  background: rgba(32, 96, 61,0.8);
+  height: 65px;
+  width: 860px;
+  z-index: 0;
+  width: 100%;
+} 
+
+.flagcolor {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.txtft{
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 5px;
+  z-index: 100;
+  position: absolute;
+  left: 250px;
+  width: 90px;
+  margin-top: -4px;
+}
+
+.p1wrap {
+  width: 75%;
+}
+
+.section1 > p {
+  font-size: 18px;
+}
+
+.section2 > h1 {
+  color: white;
+}
+
+.section1 > p {
+  font-size: 18px;
+}
+
+.sources {
+  position: absolute;
+  top: -13px;
+}
+
+.ftxt {
+  color: white;
+  top: 147px;;
+  position: absolute;
+}
+
+#ftul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 150px;
+  top: 0px;
+  margin: 0;
+}
+
+.ftli {
+  color: white;
+  margin-top: 0;
+}
+
+#spacing {
+  margin-top: 0px;
+}
+
+svg {
+  width: 250px;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+}
+
+
+</style>
+
+
+
+<script>
+
+const text = document.getElementsByClassName('t-2');
+
+  function handleScroll() {
+    const scrollValue = window.scrollY;
+
+    // Calculate color change based on scroll position
+    const normalizedScroll = Math.min(Math.max((scrollValue - 210) / 20, 0), 1); // Normalize scroll to [0, 1] range
+    const colorValue = Math.round(normalizedScroll * 255); // Calculate color value
+
+    // Apply color change and translateY based on scroll position to all elements with the 'box' class
+    for (const texts of text) {
+      texts.style.color = `rgb(${colorValue}, ${colorValue}, ${colorValue})`;
+    }
+  }
+
+
+
+
+
+  window.addEventListener('scroll', handleScroll);
+
+function scroll() {
+  console.log(scrollValue);
+}
+
+
+
+
+
+
+////
+
+</script>

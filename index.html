@@ -71,6 +71,21 @@ En la actualidad, Ruanda ha conseguido un gran progreso en diversos aspectos, su
   </div>
   </div>
   <hr>
+
+  <div class="section4">
+    <div class="s4title">
+      <h2>Contactanos</h2>
+    </div>
+    <div class="wrapper1s4">
+        <p>Si quieres ayudar, donar a organizaciones que ayuden o tienes alguna duda, contactanos en:</p>
+    <div class="mainwrapper">
+      
+      </div>
+  <div class="wrapper2">
+    <div class="link"><a href="mailto:#########" target="_blank"><h2 class="animate" id="mailto" >ayuda@fundacionruanda.com</h2></a></div>
+  </div>
+</div>
+ 
   
 </section>
 
@@ -113,14 +128,13 @@ En la actualidad, Ruanda ha conseguido un gran progreso en diversos aspectos, su
 
 
 <style>
-
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&display=swap');
 
 :root {
   --bg-primary: #000;
   --color-primary:  #FFF;
   --main-font: 'Hanken Grotesk', sans-serif;
-  
+
   --font-size-title:55px;
   --font-size-body: 24px;
   --font-size-paragraph:12px;
@@ -134,7 +148,6 @@ html {
   display: flex;
   margin-top: 65px;
 }
-
 
 
 .pic {
@@ -156,7 +169,7 @@ ul {
 
 section {
   width: 100%;
-  height: 1442.25px;
+  height: 2042.25px;
   background: black;
   margin-top: -15px;
 }
@@ -299,7 +312,7 @@ a {
   text-decoration-color: none;
   color: black;
   position: relative;
-  
+
 }
 #linkanimation::before {
   position: absolute;
@@ -352,6 +365,7 @@ a {
 #img {
   margin-right: 20px;
 }
+
 
 h1 {
   font-family: var(--main-font);
@@ -476,8 +490,68 @@ svg {
   padding: 0;
 }
 
+/* animated gradient */
 
-</style>
+body {
+  
+  margin:0;
+  
+
+}
+
+.section4 {
+  color:white;
+  padding-left: 35px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 27px;
+}
+.animate {
+     -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, rgba(0, 161, 222,0.8) 30%, rgba(250, 210, 1,0.8), rgba(32, 96, 61,0.8));
+    -text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200% 100%;
+  animation: movinggradient ease-in-out 3s infinite alternate;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+.mainwrapper {
+  
+      display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#mailto:hover {
+  transform: scale(1.01);
+  transition: 0.5s;
+}
+
+
+
+#mailto:hover::before {
+  transition: 0.5s;
+}
+
+
+
+@keyframes movinggradient {
+  0% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}</style>
 
 
 

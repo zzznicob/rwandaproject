@@ -488,11 +488,11 @@ const text = document.getElementsByClassName('t-2');
   function handleScroll() {
     const scrollValue = window.scrollY;
 
-    // Calculate color change based on scroll position
-    const normalizedScroll = Math.min(Math.max((scrollValue - 210) / 20, 0), 1); // Normalize scroll to [0, 1] range
+    // cambio color con posicion
+    const normalizedScroll = Math.min(Math.max((scrollValue - 210) / 20, 0), 1); // rango 0, 1
     const colorValue = Math.round(normalizedScroll * 255); // Calculate color value
 
-    // Apply color change and translateY based on scroll position to all elements with the 'box' class
+    // aplica color
     for (const texts of text) {
       texts.style.color = `rgb(${colorValue}, ${colorValue}, ${colorValue})`;
     }
